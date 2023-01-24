@@ -1,0 +1,67 @@
+$bg-Color:#E3E7D3;
+$primary-Color:white;
+$secunday-Color:#25291C;
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;;
+    background-color: $bg-Color;
+}
+main{
+    margin-top: 20px;
+}
+
+.card{
+
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    
+    display: flex;
+    gap: 30px;
+
+    border-radius: 10px;
+    background-color: $primary-Color;
+
+    &__img{
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    &__data{
+        font-size: 1em;
+        position: relative;
+    }
+
+    &__title{
+        margin: 10px;
+        font-size: 2em;
+    }
+
+    &__description{
+        line-height: 25px;
+    }
+
+    &__button{
+        text-decoration: none;
+        color: $primary-Color;
+        background-color: $secunday-Color;
+        border-radius: 6px;
+
+        width: 120px;
+        height: 46px;
+
+        position: absolute;
+        right: 15px;
+        bottom: -30px;
+
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
