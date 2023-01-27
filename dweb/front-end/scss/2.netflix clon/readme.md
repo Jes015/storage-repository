@@ -1,13 +1,13 @@
 # Netflix clon (front-end)
 
-# Mobile version
+## Mobile version
 
 ![mobile version 1](https://i.ibb.co/yX1tTyT/mobile-version.png)
 
 ![mobile version 2](https://i.ibb.co/XWbJg1p/mobile-version2.png)
 
 
-# Desktop version
+## Desktop version
 
 ![desktop version 1](https://i.ibb.co/0CjXPFZ/desktop-version.png)
 
