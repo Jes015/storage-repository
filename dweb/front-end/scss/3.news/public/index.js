@@ -15,7 +15,9 @@ const nav=()=>{
 }
 
 const animations=()=>{
-    ScrollReveal().reveal('.banner')
+    ScrollReveal({reset:true})
+    ScrollReveal().reveal('.banner',{delay:100})
+    ScrollReveal().reveal('.carrousel',{delay:100})
 }
 
 animations();
