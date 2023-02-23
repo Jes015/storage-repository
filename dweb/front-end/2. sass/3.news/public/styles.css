@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #352253;
+  background-image: url("./assets/images/bg.svg");
+  font-family: "Roboto", sans-serif;
+  color: wheat;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.wrap {
+  margin: 1em auto;
+  width: 90%;
+}
+
+.header {
+  background-color: #4e327a;
+  background-image: url("./assets/images/lines.svg");
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  z-index: 10;
+}
+.header__icon-company {
+  font-size: 3.5em;
+}
+.header__group-main-nav {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.header__icon-nav {
+  display: none !important;
+  font-size: 1.3em;
+}
+
+.main-nav {
+  font-size: 0.9em;
+}
+.main-nav__list {
+  gap: 1em;
+}
+
+.group-main-search {
+  position: relative;
+}
+.group-main-search__icon {
+  font-size: 1.3em;
+}
+.group-main-search__input {
+  display: none;
+}
+
+.banner {
+  background-color: aliceblue;
+  height: 28em;
+}
+.banner__info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1em;
+}
+.banner__info--main {
+  align-items: center;
+}
+.banner__infodesc {
+  display: flex;
+  gap: 2em;
+  overflow-y: auto;
+}
+.banner__title {
+  font-size: 4em;
+}
+.banner__description {
+  color: aliceblue;
+  line-height: 1.5em;
+  min-height: 2em;
+  overflow-y: auto;
+}
+.banner__description--main {
+  min-height: 0.5em;
+  padding-left: 1em;
+  border-left: 0.14em solid wheat;
+}
+.banner--main {
+  background: linear-gradient(rgba(53, 34, 83, 0.4235294118) 0%, rgba(78, 50, 122, 0.4666666667) 100%), url("https://images.pexels.com/photos/3970330/pexels-photo-3970330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center/cover;
+}
+.banner--secundary {
+  height: 18em;
+  background: linear-gradient(rgba(53, 34, 83, 0.568627451) 0%, rgba(78, 50, 122, 0.6705882353) 100%), url("https://images.pexels.com/photos/159400/television-camera-men-outdoors-ballgame-159400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center top/cover;
+}
+.banner--secundary-2 {
+  background: linear-gradient(rgba(53, 34, 83, 0.568627451) 0%, rgba(78, 50, 122, 0.6705882353) 100%), url("https://images.pexels.com/photos/3970328/pexels-photo-3970328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center/cover;
+}
+
+.button {
+  background-color: #4e327a;
+  background-image: url("./assets/images/lines.svg");
+  border-radius: 0.3em;
+  align-self: flex-end;
+}
+.button--main {
+  background: linear-gradient(rgba(78, 50, 122, 0.4666666667) 0%, rgba(78, 50, 122, 0.4666666667) 100%), url("./assets/images/lines.svg");
+  padding: 1em 7em;
+}
+.button--banner {
+  padding: 1em 5em;
+}
+.button--new {
+  padding: 0.5em 1em;
+}
+
+.carrousel {
+  display: flex;
+  flex-direction: column;
+}
+.carrousel__news-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+.carrousel__new {
+  overflow: hidden;
+  border-radius: 0.3em;
+  background: url("./assets/images/lines.svg");
+  background-color: #2e1e49;
+}
+.carrousel__new-info-container {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.carrousel__new-img {
+  width: 100%;
+  text-align: center;
+}
+
+.social {
+  font-size: 40px;
+  text-align: center;
+}
+.social__item-container {
+  margin-top: 0.4em;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  color: aliceblue;
+}
+
+.footer {
+  text-align: center;
+  background-color: #4e327a;
+  background-image: url("./assets/images/lines.svg");
+}
+.footer__group-lists {
+  padding: 2em 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  justify-items: center;
+}
+.footer__title {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 19px;
+  margin-bottom: 0.4em;
+}
+.footer__list {
+  flex-direction: column;
+  gap: 0.2em;
+  font-size: 0.9em;
+  color: aliceblue;
+}
+.footer__copy {
+  background-color: #291b41;
+  background-image: url("./assets/images/lines.svg");
+}
+
+@media (max-width: 896px) {
+  .wrap {
+    width: 98%;
+  }
+  .header__icon-company {
+    flex-grow: 1;
+    font-size: 3.5em;
+    text-align: center;
+  }
+  .header__group-main-nav {
+    order: -1;
+    flex-grow: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+  .header__group-main-nav--responsive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 2em;
+    height: 100vh;
+    background-color: #291b41;
+    background-image: url("./assets/images/bg.svg");
+    padding: 1em;
+    z-index: 20;
+  }
+  .header__icon-nav {
+    display: block !important;
+  }
+  .main-nav {
+    display: none;
+  }
+  .main-nav--responsive {
+    display: block;
+  }
+  .main-nav--list {
+    gap: 2em;
+    flex-direction: column;
+  }
+  .carrousel__news-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer__group-lists {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 586px) {
+  body {
+    font-size: 15px;
+  }
+  .header {
+    font-size: 13px;
+  }
+  .carrousel {
+    font-size: 14px;
+  }
+  .banner {
+    font-size: 14px;
+  }
+  .banner__infodesc {
+    flex-direction: column;
+    gap: 0.1em;
+  }
+  .banner__description--main {
+    border-left: none;
+  }
+  .button--main {
+    align-self: stretch;
+    text-align: center;
+  }
+  .carrousel__news-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

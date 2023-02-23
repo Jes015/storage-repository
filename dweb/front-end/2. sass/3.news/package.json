@@ -1,0 +1,15 @@
+{
+  "name": "3.news",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "parcel": "parcel public/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3"
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="wrap header--wrap">
+            <span class="company--logo">FORM</span>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Tech</li>
+                    <li>Uses</li>
+                    <li class="link--selected">Register</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-wrap">
+            <div class="main-header-form">
+                <span>REGISTER</span>
+            </div>
+
+            <form class="formulario">
+                <div class="formulario__grupo">
+                    <!--Usuario-->
+                    <label for="usuario" class="formulario__label">Usuario</label>
+                    <div class="formulario__grupo-input">
+                        <input name="usuario" id="usuario" type="text" class="formulario__input"
+                            placeholder="Joe david">
+                        <i class="formulario__icon fa-solid fa-circle-xmark"></i>
+                    </div>
+                </div>
+                <!--Contraseña-->
+                <div class="formulario__grupo">
+                    <label for="password" class="formulario__label">Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input name="password" id="password" type="password" class="formulario__input"
+                            placeholder="Password">
+                        <i class="formulario__icon fa-solid fa-circle-xmark"></i>
+                    </div>
+                </div>
+                <!--Repetir contraseña-->
+                <div class="formulario__grupo">
+                    <label for="password2" class="formulario__label">Repetir contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input name="password2" id="password2" type="password" class="formulario__input"
+                            placeholder="Password">
+                        <i class="formulario__icon fa-solid fa-circle-xmark"></i>
+                    </div>
+                </div>
+                <div class="formulario__grupo">
+                    <!--Correo-->
+                    <label for="email" class="formulario__label">Correo</label>
+                    <div class="formulario__grupo-input">
+                        <input name="email" id="email" type="email" class="formulario__input"
+                            placeholder="example@mail.com">
+                        <i class="formulario__icon fa-solid fa-circle-xmark"></i>
+                    </div>
+                </div>
+                <div class="formulario__grupo">
+                    <!--Telefono-->
+                    <label for="telefono" class="formulario__label">Telefono</label>
+                    <div class="formulario__grupo-input">
+                        <input name="telefono" id="telefono" type="tel" class="formulario__input"
+                            placeholder="+57 300000000">
+                        <i class="formulario__icon fa-solid fa-circle-xmark"></i>
+                    </div>
+                </div>
+                <!--Terminos y condiciones-->
+                <div class="formulario__terminoscondiciones">
+                    <label>
+                        <input type="checkbox" class="formulario__terminos" name="terminos" id="terminos">
+                        Rellene los terminos y condiciones
+                    </label>
+                </div>
+
+                <div class="formulario__grupo-boton-enviar">
+                    <button class="formulario__boton-enviar">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        asdfsadfsd
+    </footer>
+    <script src="https://kit.fontawesome.com/5b0a00e414.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
