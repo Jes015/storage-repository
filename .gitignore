@@ -2,3 +2,12 @@ node_modules
 .parcel*
 guides
 apiKeys.sh
+private
+/desktop/java/Alarma-master/build/
+/desktop/java/Biblioteca/build/
+/desktop/java/Biblioteca/dist/
+/desktop/java/1.Biblioteca/build/
+/desktop/java/1.Biblioteca/dist/
+/desktop/java/2.Alarma/build/
+/desktop/java/Programación 2/Trabajo 1 Programacion 2- Corte 2/EquipoDeBeisbol/build/
+/desktop/java/Programación 2/Trabajo 1 Programacion 2- Corte 2/EquipoDeBeisbol/dist/
